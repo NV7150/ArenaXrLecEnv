@@ -1,0 +1,23 @@
+{
+  // コンテナの名前（任意）
+  "name": "ArenaXrLecture202506",
+
+  // 使用するDockerイメージを指定します。
+  // ここでPythonのバージョンが決まります。
+  // 例: "3.10", "3.9", "3.11" などに変更可能です。
+  "image": "mcr.microsoft.com/devcontainers/python:3.10",
+
+  // Codespacesの環境が作成された後に実行するコマンド
+  "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt",
+
+  // VS Codeエディタのカスタマイズ設定
+  "customizations": {
+    "vscode": {
+      // 自動でインストールするVS Code拡張機能
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+      ]
+    }
+  }
+}
